@@ -74,6 +74,7 @@ h6 {
 }
 .hero {
   display: flex;
+  margin-top: 30px;
   gap: 50px;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -432,6 +433,7 @@ footer .content div:last-child div svg {
 nav {
   display: flex;
   width: 100%;
+  height: 110px;
   margin: 0 auto;
   justify-content: space-between;
   position: absolute;
@@ -440,13 +442,16 @@ nav {
   border-bottom-left-radius: 7px;
   padding-top: 20px !important;
   padding-bottom: 20px !important;
-  z-index: 2;
+  z-index: 1;
+  /* margin-bottom: -10px; */
 }
 nav .logo {
   flex: 1;
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  justify-content: flex-start; /* Ensure the logo is aligned to the left */
+  height: 90px; /* Set the height of the logo container */
+  box-sizing: border-box;
 }
 nav .navLinks {
   flex: 2;
